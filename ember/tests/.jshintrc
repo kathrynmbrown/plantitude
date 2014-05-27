@@ -42,6 +42,7 @@
     "currentURL",
     "currentPath",
     "currentRouteName"
+    "Pretender"
   ],
   "node" : false,
   "browser" : false,

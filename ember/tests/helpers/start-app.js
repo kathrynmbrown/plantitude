@@ -1,5 +1,5 @@
 /* global require */
-
+var Router = require('plantitude/router')['default'];
 var Application = require('plantitude/app')['default'];
 var Router = require('plantitude/router')['default'];
 
@@ -16,6 +16,7 @@ export default function startApp(attrs) {
   Router.reopen({
     location: 'none'
   });
+  
 
   Ember.run(function(){
     App = Application.create(attributes);
