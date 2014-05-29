@@ -4,10 +4,9 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
-  this.resource('recipes', function() {
-    this.route('show', {path: ':recipe_id'});
-    this.route('new_recipe', { path: ':new_recipe' });
-  });
+  this.resource('recipes');
+  this.resource('new_recipe', { path: '/recipes/new' });
+  this.resource('recipe', { path: '/recipes/:id' });
 });
 
 export default Router;

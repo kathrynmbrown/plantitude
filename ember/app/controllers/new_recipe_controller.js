@@ -2,7 +2,12 @@ export default Ember.ObjectController.extend({
   actions: {
     createRecipe: function() {
       var model = this.get('model');
-      model.save();
+      var controller = this;
+
+      model.save()
+      .then(function() {
+        controller.transitionToRoute('recipe', model);
+      });
     }
   }
 });
