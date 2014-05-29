@@ -4,9 +4,10 @@ gem 'rails', '4.0.4'
 gem 'pg'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
-gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'active_model_serializers'
+gem 'ember-rails'
+gem 'ember-data-source', '~> 1.0.0.beta.7'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -6,6 +6,7 @@ Router.map(function() {
   this.route('about');
   this.resource('recipes', function() {
     this.route('show', {path: ':recipe_id'});
+    this.route('new_recipe', { path: ':new_recipe' });
   });
 });
 

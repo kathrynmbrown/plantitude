@@ -1,5 +1,6 @@
 Plantitude::Application.routes.draw do
   namespace :api do
-    resources :recipes
+    root :to => 'application#index'
+    resources :recipes, :except => [:new, :edit]
   end
 end

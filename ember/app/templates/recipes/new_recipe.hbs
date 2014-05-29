@@ -1,0 +1,26 @@
+<h1>New recipe</h1>
+
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    {{input type="text" id="name" class="form-control" value=name}}
+  </div>
+  <div class="form-group">
+    <label for="directions">Directions</label>
+    {{input type="text" id="directions" class="form-control" value=directions}}
+  </div>
+  <div class="form-group">
+    <label for="servings">Servings</label>
+    {{input type="text" id="servings" class="form-control" value=servings}}
+  </div>
+  <div class="form-group">
+    <label for="cooking_time">Cooking Time</label>
+    {{input type="text" id="cooking_time" class="form-control" value=cooking_time}}
+  </div>
+  <div class="form-group">
+    <label for="total_calories">Total Calories</label>
+    {{input type="text" id="total_calories" class="form-control" value=total_calories}}
+  </div>
+
+  <button {{action createRecipe}} class="btn btn-default">Create recipe</button>
+</form>
