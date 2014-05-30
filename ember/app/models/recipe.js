@@ -1,7 +1,7 @@
 export default DS.Model.extend({
-  name: DS.attr(),
-  directions: DS.attr(),
-  servings: DS.attr(),
-  cooking_time: DS.attr(),
-  total_calories: DS.attr()
+  name: DS.attr('string'),
+  directions: DS.attr('string'),
+  servings: DS.attr('string'),
+  cooking_time: DS.attr('string'),
+  total_calories: DS.attr('string')
 });

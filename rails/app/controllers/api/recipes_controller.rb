@@ -6,7 +6,6 @@ class Api::RecipesController < ApplicationController
 
   def create
     @recipe = Recipe.new(recipe_params)
-
     if @recipe.save
       render :json => @recipe, :status => 201
     else
@@ -36,6 +35,6 @@ class Api::RecipesController < ApplicationController
 
 private
   def recipe_params
-    params.fetch(:recipe).permit(:name, :directions, :servings, :cooking_time, :total_calories)
+    params.fetch(:recipe).permit(:id, :name, :directions, :servings, :cooking_time, :total_calories)
   end
 end
