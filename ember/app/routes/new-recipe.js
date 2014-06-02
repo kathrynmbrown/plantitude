@@ -7,10 +7,7 @@ export default Ember.Route.extend({
       var newRecipe = this.get('currentModel');
       var controller = this;
 
-      newRecipe.save()
-      .then(function() {
-        controller.transitionToRoute('recipe', model);
-      });
+      newRecipe.save();
     }
   }
 });
