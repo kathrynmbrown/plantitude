@@ -3,5 +3,6 @@ export default DS.Model.extend({
   directions: DS.attr('string'),
   servings: DS.attr('string'),
   cooking_time: DS.attr('string'),
-  total_calories: DS.attr('string')
+  total_calories: DS.attr('string'),
+  category: DS.attr('string')
 });

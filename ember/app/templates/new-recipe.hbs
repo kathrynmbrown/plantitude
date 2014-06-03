@@ -21,13 +21,20 @@
     <label for="total_calories">Total Calories</label>
     {{input type="text" id="total_calories" class="form-control" value=total_calories}}
   </div>
+  <div class="form-group">
+    <label for="category">Meal Category</label>
+    {{input type="text" id="category" class="form-control" value=category}}
+  </div>
 
   <button {{action createRecipe}}>Create recipe</button>
 
 </form>
+
+<h3>Preview Recipe</h3>
 
 <p>{{name}}</p>
 <p>{{directions}}</p>
 <p>{{servings}}</p>
 <p>{{cooking_time}}</p>
 <p>{{total_calories}}</p>
+<p>{{category}}</p>
