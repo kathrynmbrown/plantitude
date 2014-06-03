@@ -3,7 +3,6 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('index', { path: '/' });
   this.route('about');
   this.resource('recipes');
   this.resource('new-recipe', { path: '/recipes/new' });

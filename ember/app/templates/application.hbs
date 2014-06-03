@@ -33,4 +33,18 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-{{outlet}}
+<div class="row">
+  <div class="col-md-4">
+    <div class="jumbotron">
+      <p>Nutrition planner for vegan and vegetarian endurance athletes.</p>
+    </div>
+    <div class="list-group">
+      {{link-to 'Recipes' 'recipes' class="list-group-item active"}}
+      {{link-to 'Nutrition Calculator' 'nutrition' class="list-group-item"}}
+      {{link-to 'Advice' 'advice' class="list-group-item"}}
+    </div>
+  </div>
+  <div class="col-md-8">
+    {{outlet}}
+  </div>
+</div>
