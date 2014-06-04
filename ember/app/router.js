@@ -9,6 +9,8 @@ Router.map(function() {
   this.resource('recipes');
   this.resource('new-recipe', { path: '/recipes/new' });
   this.resource('recipe', { path: '/recipes/:id' });
+  this.resource('mealcategories');
+  this.resource('mealcategory', { path: '/mealcategories/:id' });
 });
 
 export default Router;

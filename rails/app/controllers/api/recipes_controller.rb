@@ -35,6 +35,6 @@ class Api::RecipesController < ApplicationController
 
 private
   def recipe_params
-    params.fetch(:recipe).permit(:id, :name, :directions, :servings, :cooking_time, :total_calories, :category)
+    params.fetch(:recipe).permit(:id, :name, :directions, :servings, :cooking_time, :total_calories, :mealcategory_id)
   end
 end

@@ -4,5 +4,5 @@ export default DS.Model.extend({
   servings: DS.attr('string'),
   cooking_time: DS.attr('string'),
   total_calories: DS.attr('string'),
-  category: DS.attr('string')
+  mealcategory: DS.belongsTo('mealcategory')
 });
