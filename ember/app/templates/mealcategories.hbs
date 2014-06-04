@@ -1,1 +1,5 @@
-All the meal categories!
+<ul>
+{{#each mealcategory in controller}}
+  <li>{{#link-to 'mealcategory' mealcategory}}{{mealcategory.name}}{{/link-to}}</li>
+{{/each}}
+</ul>
